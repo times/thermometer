@@ -1,0 +1,34 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="swatch-template">
+  <ul class="swatch-bar">
+    <li class="bar-item a"></li>
+    <li class="bar-item b"></li>
+    <li class="bar-item c"></li>
+    <li class="bar-item d"></li>
+    <li class="bar-item e"></li>
+    <li class="bar-item f"></li>
+    <li class="bar-item g"></li>
+    <li class="bar-item h"></li>
+    <li class="bar-item i"></li>
+    <li class="bar-item j"></li>
+    <li class="bar-item k"></li>
+  </ul>
+</div>
+
+<div id="app">
+  <ul class="comments">
+    {% for comment in comment_list %}
+      <li class="item" data-sentiment="{{comment.sentiment|floatformat:"0"}}">
+        <div class="head">
+          <div class="avatar" style="background-image: url({{comment.user.avatar}})"></div>
+          <div class="user">{{comment.user.name}}</div>
+        </div>
+        <div class="sentiment-num">{{comment.sentiment|floatformat:"0"}}</div>
+        <div class="body">{{comment.body}}</div>
+      </li>
+    {% endfor %}
+  </ul>
+</div>
+{% endblock %}
