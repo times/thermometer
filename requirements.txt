@@ -1,9 +1,11 @@
 Django==1.5.4
 PyYAML==3.10
 distribute==0.6.34
+dj-static==0.0.5
 gunicorn==18.0
 nltk==2.0.4
 numpy==1.7.1
 psycopg2==2.5.1
 pytz==2013.7
+static==0.4
 wsgiref==0.1.2
