@@ -1,0 +1,118 @@
+@import "normalize";
+@import "typography";
+@import "responsive";
+@import "retina";
+
+html {
+  font-size: 20px;
+}
+
+body {
+  font: normal 100%/1.4em 'Georgia',serif;
+  color: #444;
+  background-color: #fff;
+}
+
+#app {
+  position: relative;
+  z-index: 10;
+  margin: 0 auto;
+  padding: 40px;
+  width: 90%;
+  max-width: 840px;
+}
+
+.comments {
+
+  padding: 0;
+  margin: 0;
+
+  .item {
+
+    position: relative;
+    list-style-type: none;
+    background-color: #f0f0f0;
+    padding: 30px;
+    margin-bottom: 6px;
+    border: solid 5px white;
+
+    .head {
+      display: block;
+      width: 100%;
+      &:after {
+        content: '';
+        display: block;
+        clear: both;
+      }
+    }
+
+    .avatar {
+      margin-right: 5px;
+      width: 55px;
+      height: 55px;
+      float: left;
+      background-color: white;
+      overflow: hidden;
+      background-size: 55px 55px;
+    }
+
+    .user {
+      float: left;
+      padding-top: 0.625rem;
+      font-weight: bold;
+      padding-left: 12px;
+    }
+
+    .body {
+      padding-top: 8px;
+      font-size: 1rem;
+    }
+
+    .sentiment-num {
+      position: absolute;
+      z-index: 10;
+      top: 15px;
+      right: 15px;
+      padding: 10px 0;
+      background-color: #ddd;
+      font-size: 2rem;
+      line-height: 1rem;
+      font-weight: bold;
+      width: 2.8125rem;
+      height: 1.5625rem;
+      text-align: center;
+    }
+
+  }
+
+}
+
+.swatch-template {
+  position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+  .swatch-bar {
+    padding: 0;
+    margin: 0 auto;
+    width: 300px;
+
+    .bar-item {
+      list-style-type: none;
+      height: 2.2rem;
+      width: 9.09090909090909%;
+      border: none;
+    }
+    .a { background-color: #1c3f06 }
+    .b { background-color: #3d7212 }
+    .c { background-color: #84a51f }
+    .d { background-color: #c6d746 }
+    .e { background-color: #e8f19f }
+    .f { background-color: #ffffff }
+    .g { background-color: #e7c358 }
+    .h { background-color: #daa538 }
+    .i { background-color: #ca7631 }
+    .j { background-color: #c7542f }
+    .k { background-color: #b53929 }
+  }
+}

@@ -1,0 +1,24 @@
+/* Typography
+--------------------------------------------------------------------- */
+
+body {
+  font: normal 100%/1.4em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: #333333;
+  opacity: .99;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
+}
+
+p {
+  -webkit-hyphens: auto;
+  -moz-hyphens: auto;
+  hyphens: auto;
+}
+
+strong {
+  font-weight: bold;
+}
+
+em {
+  font-style: italic;
+}
