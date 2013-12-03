@@ -9,6 +9,7 @@ urlpatterns = patterns('',
     # url(r'^$', 'timesthermometer.views.home', name='home'),
     # url(r'^timesthermometer/', include('timesthermometer.foo.urls')),
     url(r'^api/', include('api.urls')),
+    url(r'^comments/', include('comments.urls')),
 
     # Uncomment the admin/doc line below to enable admin documentation:
     # url(r'^admin/doc/', include('django.contrib.admindocs.urls')),
