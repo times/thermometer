@@ -3,11 +3,10 @@ import os
 
 DJANGO_ENV = os.getenv('DJANGO_ENV','development')
 
-# if DJANGO_ENV == 'development':
-#     DEBUG = True
-# else:
-#     DEBUG = False
-DEBUG = True
+if DJANGO_ENV == 'development':
+    DEBUG = True
+else:
+    DEBUG = False
 
 TEMPLATE_DEBUG = DEBUG
 BASE_DIR = os.path.realpath( os.path.join(os.path.dirname(__file__), '../'))
