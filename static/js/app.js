@@ -3,7 +3,7 @@
   $.ajax({
     method: 'GET',
     dataType: 'jsonp',
-    url: 'http://127.0.0.1:8000/api/comments/'
+    url: '/api/comments/'
   }).done(function(data){
 
     // dummy colors
