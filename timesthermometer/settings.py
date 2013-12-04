@@ -165,6 +165,7 @@ LOGGING = {
 }
 
 # Parse database configuration from $DATABASE_URL
+import dj_database_url
 if DJANGO_ENV == 'live':
     DATABASES['default'] =  dj_database_url.config()
 
