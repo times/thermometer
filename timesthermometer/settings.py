@@ -165,7 +165,7 @@ LOGGING = {
 }
 
 # Parse database configuration from $DATABASE_URL
-if DJANGO_ENV == 'production':
+if DJANGO_ENV == 'live':
     DATABASES['default'] =  dj_database_url.config()
 
 # Honor the 'X-Forwarded-Proto' header for request.is_secure()
