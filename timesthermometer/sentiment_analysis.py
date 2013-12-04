@@ -3,7 +3,6 @@ Basic Sentiment Analysis
 
 This module is an alterated version of
 http://fjavieralba.com/basic-sentiment-analysis-with-python.html
-
 """
 
 import nltk

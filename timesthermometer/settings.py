@@ -1,9 +1,10 @@
 # Django settings for timesthermometer project.
 import os
 
-DEBUG = True
-TEMPLATE_DEBUG = DEBUG
 DJANGO_ENV = os.getenv('DJANGO_ENV','development')
+if DJANGO_ENV == 'development':
+    DEBUG = True
+TEMPLATE_DEBUG = DEBUG
 BASE_DIR = os.path.realpath( os.path.join(os.path.dirname(__file__), '../'))
 
 ADMINS = (
