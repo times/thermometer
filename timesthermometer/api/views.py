@@ -3,9 +3,9 @@ from django.http import HttpResponse
 def home(request):
   return HttpResponse('')
 
-import sentiment_analysis
-from sentiment_analysis import Splitter, POSTagger, DictionaryTagger, sentiment_score
-from dictionaries.models import Positive, Negative, Incrementer, Decrementer, Inverter
+import timesthermometer.sentiment_analysis
+from timesthermometer.sentiment_analysis import Splitter, POSTagger, DictionaryTagger, sentiment_score
+from timesthermometer.dictionaries.models import Positive, Negative, Incrementer, Decrementer, Inverter
 from pprint import pprint
 
 def sentiment(text):
@@ -42,7 +42,7 @@ def sentiment(text):
   return score
 
 import json
-from comments.models import Comment
+from timesthermometer.comments.models import Comment
 
 def comments(request):
   comments = []

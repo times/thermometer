@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url
-from api import views
+from timesthermometer.api import views
 
 urlpatterns = patterns('',
   url(r'^$', views.home, name='home'),

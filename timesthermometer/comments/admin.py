@@ -1,5 +1,5 @@
 from django.contrib import admin
-from comments.models import Comment, User
+from timesthermometer.comments.models import Comment, User
 
 class CommentAdmin(admin.ModelAdmin):
   list_display = ('pub_date','comment',)

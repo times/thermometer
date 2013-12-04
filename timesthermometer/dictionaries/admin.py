@@ -1,5 +1,5 @@
 from django.contrib import admin
-from dictionaries.models import Positive, Negative, Incrementer, Decrementer, Inverter
+from timesthermometer.dictionaries.models import Positive, Negative, Incrementer, Decrementer, Inverter
 
 class PositiveAdmin(admin.ModelAdmin):
   list_display = ('label',)

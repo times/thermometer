@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
-from comments.models import Comment
-from api.views import sentiment
+from timesthermometer.comments.models import Comment
+from timesthermometer.api.views import sentiment
 
 def home(request):
   comments = []

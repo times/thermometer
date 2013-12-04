@@ -1,5 +1,5 @@
 from django.conf.urls import patterns, url
-from comments import views
+from timesthermometer.comments import views
 
 urlpatterns = patterns('',
   url(r'^$', views.home, name='home'),
